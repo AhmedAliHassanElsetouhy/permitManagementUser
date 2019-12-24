@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+	<parameter name="browser" value="chrome" />
+	<test name="Regression Test" preserve-order="true">
+		<classes>
+			<class name="tests.ExportRequestPermitTest" />
+			<class name="tests.LoginTest" />
+			<class name="tests.ForgetPasswordTest" />
+			<class name="tests.RequestPermitTest" />
+			<class name="tests.ExpiryDatesTest" />
+		</classes>
+	</test>
+</suite> 
