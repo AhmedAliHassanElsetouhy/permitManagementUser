@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods, 1 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RegistrationFormTest" hash-for-method="makeLogoutTest">makeLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.LoginTest" hash-for-method="emptyEmailFieldLoginFormTest">emptyEmailFieldLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.LoginTest" hash-for-method="emptyPasswordFieldLoginFormTest">emptyPasswordFieldLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ForgetPasswordTest" hash-for-method="emptydataForgetPasswordFormTest">emptydataForgetPasswordFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.LoginTest" hash-for-method="emptydataLoginFormTest">emptydataLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RequestPermitTest" hash-for-method="exportPermitRequestTest">exportPermitRequestTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExportRequestPermitTest" hash-for-method="exportPermitRequestTest">exportPermitRequestTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ForgetPasswordTest" hash-for-method="forgetPasswordFormTest">forgetPasswordFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ForgetPasswordTest" hash-for-method="invalidDataForgetPasswordFormTest">invalidDataForgetPasswordFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExportRequestPermitTest" hash-for-method="makeLoginFormTest">makeLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RequestPermitTest" hash-for-method="makeLoginFormTest">makeLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.LoginTest" hash-for-method="makeLoginFormTest">makeLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExpiryDatesTest" hash-for-method="makeLoginFormTest">makeLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.PermitManagementListTest" hash-for-method="makeLoginFormTest">makeLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExpiryDatesTest" hash-for-method="makeLogoutTest">makeLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.PermitManagementListTest" hash-for-method="makeLogoutTest">makeLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RequestPermitTest" hash-for-method="makeLogoutTest">makeLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.LoginTest" hash-for-method="makeLogoutTest">makeLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExportRequestPermitTest" hash-for-method="makeLogoutTest">makeLogoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ForgetPasswordTest" hash-for-method="openForgetPasswordFormTest">openForgetPasswordFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.LoginTest" hash-for-method="openLoginFormTest">openLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ForgetPasswordTest" hash-for-method="openLoginFormTest">openLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.PermitManagementListTest" hash-for-method="openLoginFormTest">openLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExpiryDatesTest" hash-for-method="openLoginFormTest">openLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExportRequestPermitTest" hash-for-method="openLoginFormTest">openLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RequestPermitTest" hash-for-method="openLoginFormTest">openLoginFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.PermitManagementListTest" hash-for-method="openPermitMagementListTest">openPermitMagementListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RegistrationFormTest" hash-for-method="openRegisterFormTest">openRegisterFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExpiryDatesTest" hash-for-method="requestPermitTest">requestPermitTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RequestPermitTest" hash-for-method="requestPermitTest">requestPermitTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RequestPermitTest" hash-for-method="selectPermitTypeTest">selectPermitTypeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.RegistrationFormTest" hash-for-method="submitRegisterFormTest">submitRegisterFormTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="tests.ExportRequestPermitTest" hash-for-method="validFillExportPermitForm">validFillExportPermitForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegistrationFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLogoutTest">
+                  </a> <!-- makeLogoutTest -->
+                  <span class="method-name">makeLogoutTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;تسجيل الخروج&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IQFTFHJ&apos;, ip: &apos;192.168.8.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\ahmed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 766b4313804e5bcae68b5104805d473e
+*** Element info: {Using=link text, value=تسجيل الخروج}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pages.PageBase.clickButton(PageBase.java:48)
+	at pages.HomePage.logoutFun(HomePage.java:28)
+	at tests.RegistrationFormTest.makeLogoutTest(RegistrationFormTest.java:52)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.PermitManagementListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLoginFormTest">
+                  </a> <!-- makeLoginFormTest -->
+                  <span class="method-name">makeLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLogoutTest">
+                  </a> <!-- makeLogoutTest -->
+                  <span class="method-name">makeLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLoginFormTest">
+                  </a> <!-- openLoginFormTest -->
+                  <span class="method-name">openLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openPermitMagementListTest">
+                  </a> <!-- openPermitMagementListTest -->
+                  <span class="method-name">openPermitMagementListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyEmailFieldLoginFormTest">
+                  </a> <!-- emptyEmailFieldLoginFormTest -->
+                  <span class="method-name">emptyEmailFieldLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyPasswordFieldLoginFormTest">
+                  </a> <!-- emptyPasswordFieldLoginFormTest -->
+                  <span class="method-name">emptyPasswordFieldLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptydataLoginFormTest">
+                  </a> <!-- emptydataLoginFormTest -->
+                  <span class="method-name">emptydataLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLoginFormTest">
+                  </a> <!-- makeLoginFormTest -->
+                  <span class="method-name">makeLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLogoutTest">
+                  </a> <!-- makeLogoutTest -->
+                  <span class="method-name">makeLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLoginFormTest">
+                  </a> <!-- openLoginFormTest -->
+                  <span class="method-name">openLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RequestPermitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="exportPermitRequestTest">
+                  </a> <!-- exportPermitRequestTest -->
+                  <span class="method-name">exportPermitRequestTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLoginFormTest">
+                  </a> <!-- makeLoginFormTest -->
+                  <span class="method-name">makeLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLogoutTest">
+                  </a> <!-- makeLogoutTest -->
+                  <span class="method-name">makeLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLoginFormTest">
+                  </a> <!-- openLoginFormTest -->
+                  <span class="method-name">openLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="requestPermitTest">
+                  </a> <!-- requestPermitTest -->
+                  <span class="method-name">requestPermitTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectPermitTypeTest">
+                  </a> <!-- selectPermitTypeTest -->
+                  <span class="method-name">selectPermitTypeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ForgetPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptydataForgetPasswordFormTest">
+                  </a> <!-- emptydataForgetPasswordFormTest -->
+                  <span class="method-name">emptydataForgetPasswordFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgetPasswordFormTest">
+                  </a> <!-- forgetPasswordFormTest -->
+                  <span class="method-name">forgetPasswordFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidDataForgetPasswordFormTest">
+                  </a> <!-- invalidDataForgetPasswordFormTest -->
+                  <span class="method-name">invalidDataForgetPasswordFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openForgetPasswordFormTest">
+                  </a> <!-- openForgetPasswordFormTest -->
+                  <span class="method-name">openForgetPasswordFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLoginFormTest">
+                  </a> <!-- openLoginFormTest -->
+                  <span class="method-name">openLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegistrationFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openRegisterFormTest">
+                  </a> <!-- openRegisterFormTest -->
+                  <span class="method-name">openRegisterFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitRegisterFormTest">
+                  </a> <!-- submitRegisterFormTest -->
+                  <span class="method-name">submitRegisterFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ExportRequestPermitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="exportPermitRequestTest">
+                  </a> <!-- exportPermitRequestTest -->
+                  <span class="method-name">exportPermitRequestTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLoginFormTest">
+                  </a> <!-- makeLoginFormTest -->
+                  <span class="method-name">makeLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLogoutTest">
+                  </a> <!-- makeLogoutTest -->
+                  <span class="method-name">makeLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLoginFormTest">
+                  </a> <!-- openLoginFormTest -->
+                  <span class="method-name">openLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validFillExportPermitForm">
+                  </a> <!-- validFillExportPermitForm -->
+                  <span class="method-name">validFillExportPermitForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ExpiryDatesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLoginFormTest">
+                  </a> <!-- makeLoginFormTest -->
+                  <span class="method-name">makeLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="makeLogoutTest">
+                  </a> <!-- makeLogoutTest -->
+                  <span class="method-name">makeLogoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openLoginFormTest">
+                  </a> <!-- openLoginFormTest -->
+                  <span class="method-name">openLoginFormTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="requestPermitTest">
+                  </a> <!-- requestPermitTest -->
+                  <span class="method-name">requestPermitTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ExpiryDatesTest&quot;/&gt;
+      &lt;class name=&quot;tests.ExportRequestPermitTest&quot;/&gt;
+      &lt;class name=&quot;tests.ForgetPasswordTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.PermitManagementListTest&quot;/&gt;
+      &lt;class name=&quot;tests.RegistrationFormTest&quot;/&gt;
+      &lt;class name=&quot;tests.RequestPermitTest&quot;/&gt;
+      &lt;class name=&quot;tests.TestBase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validFillExportPermitForm')
+data.setCell(0, 2, 'tests.ExportRequestPermitTest')
+data.setCell(0, 3, 46790);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'makeLogoutTest')
+data.setCell(1, 2, 'tests.RegistrationFormTest')
+data.setCell(1, 3, 30053);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openLoginFormTest')
+data.setCell(2, 2, 'tests.ExpiryDatesTest')
+data.setCell(2, 3, 11688);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'submitRegisterFormTest')
+data.setCell(3, 2, 'tests.RegistrationFormTest')
+data.setCell(3, 3, 6967);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'forgetPasswordFormTest')
+data.setCell(4, 2, 'tests.ForgetPasswordTest')
+data.setCell(4, 3, 3805);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'exportPermitRequestTest')
+data.setCell(5, 2, 'tests.ExportRequestPermitTest')
+data.setCell(5, 3, 2789);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'makeLoginFormTest')
+data.setCell(6, 2, 'tests.LoginTest')
+data.setCell(6, 3, 2498);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'makeLogoutTest')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 2161);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'makeLoginFormTest')
+data.setCell(8, 2, 'tests.PermitManagementListTest')
+data.setCell(8, 3, 1969);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'openPermitMagementListTest')
+data.setCell(9, 2, 'tests.PermitManagementListTest')
+data.setCell(9, 3, 1856);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'makeLoginFormTest')
+data.setCell(10, 2, 'tests.ExpiryDatesTest')
+data.setCell(10, 3, 1594);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'openLoginFormTest')
+data.setCell(11, 2, 'tests.PermitManagementListTest')
+data.setCell(11, 3, 1515);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'exportPermitRequestTest')
+data.setCell(12, 2, 'tests.RequestPermitTest')
+data.setCell(12, 3, 1506);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'openRegisterFormTest')
+data.setCell(13, 2, 'tests.RegistrationFormTest')
+data.setCell(13, 3, 1477);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'openLoginFormTest')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 1454);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'invalidDataForgetPasswordFormTest')
+data.setCell(15, 2, 'tests.ForgetPasswordTest')
+data.setCell(15, 3, 1371);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'makeLoginFormTest')
+data.setCell(16, 2, 'tests.ExportRequestPermitTest')
+data.setCell(16, 3, 1338);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'emptyPasswordFieldLoginFormTest')
+data.setCell(17, 2, 'tests.LoginTest')
+data.setCell(17, 3, 1316);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'openLoginFormTest')
+data.setCell(18, 2, 'tests.ForgetPasswordTest')
+data.setCell(18, 3, 1210);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'makeLogoutTest')
+data.setCell(19, 2, 'tests.PermitManagementListTest')
+data.setCell(19, 3, 1092);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'openLoginFormTest')
+data.setCell(20, 2, 'tests.ExportRequestPermitTest')
+data.setCell(20, 3, 1079);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'makeLoginFormTest')
+data.setCell(21, 2, 'tests.RequestPermitTest')
+data.setCell(21, 3, 1073);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'makeLogoutTest')
+data.setCell(22, 2, 'tests.ExportRequestPermitTest')
+data.setCell(22, 3, 1057);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'openLoginFormTest')
+data.setCell(23, 2, 'tests.RequestPermitTest')
+data.setCell(23, 3, 868);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'makeLogoutTest')
+data.setCell(24, 2, 'tests.ExpiryDatesTest')
+data.setCell(24, 3, 852);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'requestPermitTest')
+data.setCell(25, 2, 'tests.ExpiryDatesTest')
+data.setCell(25, 3, 817);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'emptyEmailFieldLoginFormTest')
+data.setCell(26, 2, 'tests.LoginTest')
+data.setCell(26, 3, 771);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'openForgetPasswordFormTest')
+data.setCell(27, 2, 'tests.ForgetPasswordTest')
+data.setCell(27, 3, 687);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'makeLogoutTest')
+data.setCell(28, 2, 'tests.RequestPermitTest')
+data.setCell(28, 3, 672);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'requestPermitTest')
+data.setCell(29, 2, 'tests.RequestPermitTest')
+data.setCell(29, 3, 491);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'selectPermitTypeTest')
+data.setCell(30, 2, 'tests.RequestPermitTest')
+data.setCell(30, 3, 440);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'emptydataLoginFormTest')
+data.setCell(31, 2, 'tests.LoginTest')
+data.setCell(31, 3, 337);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'emptydataForgetPasswordFormTest')
+data.setCell(32, 2, 'tests.ForgetPasswordTest')
+data.setCell(32, 3, 185);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">14 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.PermitManagementListTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.RequestPermitTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ForgetPasswordTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TestBase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.RegistrationFormTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ExportRequestPermitTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startDriver</span>
+                <br/>
+                <span class="ignored-method-name">stopDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ExpiryDatesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startDriver(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">openLoginFormTest</span>
+                <span class="method-start">9986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openLoginFormTest status=SUCCESS method=ExpiryDatesTest.openLoginFormTest()[pri:1, ...)</span>
+                <span class="method-start">21675 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLoginFormTest</span>
+                <span class="method-start">21678 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLoginFormTest status=SUCCESS method=ExpiryDatesTest.makeLoginFormTest()[pri:2, ...)</span>
+                <span class="method-start">23272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">requestPermitTest</span>
+                <span class="method-start">23273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=requestPermitTest status=SUCCESS method=ExpiryDatesTest.requestPermitTest()[pri:3, ...)</span>
+                <span class="method-start">24090 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLogoutTest</span>
+                <span class="method-start">24091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLogoutTest status=SUCCESS method=ExpiryDatesTest.makeLogoutTest()[pri:4, instan...)</span>
+                <span class="method-start">24943 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ExportRequestPermitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openLoginFormTest</span>
+                <span class="method-start">24944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openLoginFormTest status=SUCCESS method=ExportRequestPermitTest.openLoginFormTest()...)</span>
+                <span class="method-start">26023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLoginFormTest</span>
+                <span class="method-start">26024 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLoginFormTest status=SUCCESS method=ExportRequestPermitTest.makeLoginFormTest()...)</span>
+                <span class="method-start">27362 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">exportPermitRequestTest</span>
+                <span class="method-start">27362 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=exportPermitRequestTest status=SUCCESS method=ExportRequestPermitTest.exportPermitR...)</span>
+                <span class="method-start">30152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validFillExportPermitForm</span>
+                <span class="method-start">30153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=validFillExportPermitForm status=SUCCESS method=ExportRequestPermitTest.validFillEx...)</span>
+                <span class="method-start">76944 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLogoutTest</span>
+                <span class="method-start">76945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLogoutTest status=SUCCESS method=ExportRequestPermitTest.makeLogoutTest()[pri:1...)</span>
+                <span class="method-start">78002 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ForgetPasswordTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openLoginFormTest</span>
+                <span class="method-start">78003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openLoginFormTest status=SUCCESS method=ForgetPasswordTest.openLoginFormTest()[pri:...)</span>
+                <span class="method-start">79213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">openForgetPasswordFormTest</span>
+                <span class="method-start">79215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openForgetPasswordFormTest status=SUCCESS method=ForgetPasswordTest.openForgetPassw...)</span>
+                <span class="method-start">79903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptydataForgetPasswordFormTest</span>
+                <span class="method-start">79904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=emptydataForgetPasswordFormTest status=SUCCESS method=ForgetPasswordTest.emptydataF...)</span>
+                <span class="method-start">80089 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invalidDataForgetPasswordFormTest</span>
+                <span class="method-start">80090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=invalidDataForgetPasswordFormTest status=SUCCESS method=ForgetPasswordTest.invalidD...)</span>
+                <span class="method-start">81461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">forgetPasswordFormTest</span>
+                <span class="method-start">81463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=forgetPasswordFormTest status=SUCCESS method=ForgetPasswordTest.forgetPasswordFormT...)</span>
+                <span class="method-start">85269 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openLoginFormTest</span>
+                <span class="method-start">85270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openLoginFormTest status=SUCCESS method=LoginTest.openLoginFormTest()[pri:1, instan...)</span>
+                <span class="method-start">86724 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptydataLoginFormTest</span>
+                <span class="method-start">86726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=emptydataLoginFormTest status=SUCCESS method=LoginTest.emptydataLoginFormTest()[pri...)</span>
+                <span class="method-start">87063 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptyEmailFieldLoginFormTest</span>
+                <span class="method-start">87066 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=emptyEmailFieldLoginFormTest status=SUCCESS method=LoginTest.emptyEmailFieldLoginFo...)</span>
+                <span class="method-start">87838 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptyPasswordFieldLoginFormTest</span>
+                <span class="method-start">87840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=emptyPasswordFieldLoginFormTest status=SUCCESS method=LoginTest.emptyPasswordFieldL...)</span>
+                <span class="method-start">89157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLoginFormTest</span>
+                <span class="method-start">89158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLoginFormTest status=SUCCESS method=LoginTest.makeLoginFormTest()[pri:5, instan...)</span>
+                <span class="method-start">91656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLogoutTest</span>
+                <span class="method-start">91657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLogoutTest status=SUCCESS method=LoginTest.makeLogoutTest()[pri:6, instance:tes...)</span>
+                <span class="method-start">93819 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PermitManagementListTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openLoginFormTest</span>
+                <span class="method-start">93820 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openLoginFormTest status=SUCCESS method=PermitManagementListTest.openLoginFormTest(...)</span>
+                <span class="method-start">95336 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLoginFormTest</span>
+                <span class="method-start">95338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLoginFormTest status=SUCCESS method=PermitManagementListTest.makeLoginFormTest(...)</span>
+                <span class="method-start">97307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">openPermitMagementListTest</span>
+                <span class="method-start">97308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openPermitMagementListTest status=SUCCESS method=PermitManagementListTest.openPermi...)</span>
+                <span class="method-start">99165 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLogoutTest</span>
+                <span class="method-start">99167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLogoutTest status=SUCCESS method=PermitManagementListTest.makeLogoutTest()[pri:...)</span>
+                <span class="method-start">100259 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegistrationFormTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openRegisterFormTest</span>
+                <span class="method-start">100260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openRegisterFormTest status=SUCCESS method=RegistrationFormTest.openRegisterFormTes...)</span>
+                <span class="method-start">101737 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">submitRegisterFormTest</span>
+                <span class="method-start">101738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=submitRegisterFormTest status=SUCCESS method=RegistrationFormTest.submitRegisterFor...)</span>
+                <span class="method-start">108705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">makeLogoutTest</span>
+                <span class="method-start">108706 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLogoutTest status=FAILURE method=RegistrationFormTest.makeLogoutTest()[pri:3, i...)</span>
+                <span class="method-start">138762 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RequestPermitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openLoginFormTest</span>
+                <span class="method-start">139128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=openLoginFormTest status=SUCCESS method=RequestPermitTest.openLoginFormTest()[pri:1...)</span>
+                <span class="method-start">139996 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLoginFormTest</span>
+                <span class="method-start">139996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLoginFormTest status=SUCCESS method=RequestPermitTest.makeLoginFormTest()[pri:2...)</span>
+                <span class="method-start">141069 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">requestPermitTest</span>
+                <span class="method-start">141070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=requestPermitTest status=SUCCESS method=RequestPermitTest.requestPermitTest()[pri:3...)</span>
+                <span class="method-start">141561 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">selectPermitTypeTest</span>
+                <span class="method-start">141561 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=selectPermitTypeTest status=SUCCESS method=RequestPermitTest.selectPermitTypeTest()...)</span>
+                <span class="method-start">142001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">exportPermitRequestTest</span>
+                <span class="method-start">142001 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=exportPermitRequestTest status=SUCCESS method=RequestPermitTest.exportPermitRequest...)</span>
+                <span class="method-start">143507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">makeLogoutTest</span>
+                <span class="method-start">143507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=makeLogoutTest status=SUCCESS method=RequestPermitTest.makeLogoutTest()[pri:6, inst...)</span>
+                <span class="method-start">144179 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ExpiryDatesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">stopDriver</span>
+                <span class="method-start">144200 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

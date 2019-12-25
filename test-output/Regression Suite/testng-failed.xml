@@ -6,35 +6,49 @@
     <classes>
       <class name="tests.ExpiryDatesTest">
         <methods>
-          <include name="screenshotOnFailure"/>
+          <include name="openLoginFormTest"/>
+          <include name="requestPermitTest"/>
+          <include name="makeLogoutTest"/>
+          <include name="makeLoginFormTest"/>
         </methods>
       </class> <!-- tests.ExpiryDatesTest -->
       <class name="tests.LoginTest">
         <methods>
-          <include name="screenshotOnFailure"/>
+          <include name="openLoginFormTest"/>
+          <include name="makeLoginFormTest"/>
+          <include name="emptydataLoginFormTest"/>
+          <include name="emptyEmailFieldLoginFormTest"/>
+          <include name="makeLogoutTest"/>
+          <include name="emptyPasswordFieldLoginFormTest"/>
         </methods>
       </class> <!-- tests.LoginTest -->
       <class name="tests.ExportRequestPermitTest">
         <methods>
           <include name="startDriver"/>
-          <include name="stopDriver"/>
-          <include name="screenshotOnFailure"/>
+          <include name="openLoginFormTest"/>
+          <include name="makeLogoutTest"/>
+          <include name="makeLoginFormTest"/>
+          <include name="exportPermitRequestTest"/>
+          <include name="validFillExportPermitForm"/>
         </methods>
       </class> <!-- tests.ExportRequestPermitTest -->
       <class name="tests.ForgetPasswordTest">
         <methods>
-          <include name="makeLogoutTest"/>
           <include name="openForgetPasswordFormTest"/>
           <include name="invalidDataForgetPasswordFormTest"/>
           <include name="emptydataForgetPasswordFormTest"/>
           <include name="openLoginFormTest"/>
-          <include name="screenshotOnFailure"/>
           <include name="forgetPasswordFormTest"/>
         </methods>
       </class> <!-- tests.ForgetPasswordTest -->
       <class name="tests.RequestPermitTest">
         <methods>
-          <include name="screenshotOnFailure"/>
+          <include name="openLoginFormTest"/>
+          <include name="requestPermitTest"/>
+          <include name="selectPermitTypeTest"/>
+          <include name="exportPermitRequestTest"/>
+          <include name="makeLogoutTest"/>
+          <include name="makeLoginFormTest"/>
         </methods>
       </class> <!-- tests.RequestPermitTest -->
     </classes>
