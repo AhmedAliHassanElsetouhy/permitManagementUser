@@ -17,7 +17,6 @@ public class ExcelReader {
 		String filePath = System.getProperty("user.dir") + "/src/test/java/data/UserData.xlsx";
 		File srcFile = new File(filePath);
 
-		
 		try {
 			fis = new FileInputStream(srcFile);
 		} catch (FileNotFoundException e) {

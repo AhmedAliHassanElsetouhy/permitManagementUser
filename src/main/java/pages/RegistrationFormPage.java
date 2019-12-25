@@ -29,7 +29,7 @@ public class RegistrationFormPage extends PageBase {
 	@FindBy(id = "User_NationalIdEndDate")
 	public WebElement nationalEndDateTxtBox;
 
-	@FindBy(xpath = "//label[for='NationalIdImage']")
+	@FindBy(xpath = "//label[@for='NationalIdImage']")
 	// @FindBy(id = "NationalIdImage")
 	public WebElement nationalIdImageModel;
 
