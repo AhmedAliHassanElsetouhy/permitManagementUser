@@ -45,11 +45,4 @@ public class RegistrationFormTest extends TestBase {
 				NationalityIdIndex, workPhone);
 	}
 	
-	@Test(priority = 3, dependsOnMethods = { "submitRegisterFormTest" })
-	public void makeLogoutTest() throws AWTException {
-		homePage = new HomePage(driver);
-		defaultPage = new DefaultPage(driver);
-		homePage.logoutFun();
-		Assert.assertTrue(defaultPage.loginBtn.isDisplayed());
-	}
 }
