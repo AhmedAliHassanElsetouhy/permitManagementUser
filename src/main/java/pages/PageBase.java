@@ -111,7 +111,7 @@ public class PageBase {
 
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(selection, null);
-		System.out.println(imagePath);
+		// System.out.println(imagePath);
 
 		clickButton(fileUploader);
 

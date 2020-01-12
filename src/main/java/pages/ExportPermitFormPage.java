@@ -84,7 +84,7 @@ public class ExportPermitFormPage extends PageBase {
 	public WebElement exportReasonReqValidationMsg;
 
 	// @FindBy(xpath = "//*[text()='إرسال الطلب']")
-	@FindBy(xpath = "//input[@value='إرسال الطلب']")
+	@FindBy(xpath = "//*[@value='إرسال الطلب']")
 	// @FindBy(xpath = "//input[@class='btn btn-primary']")
 	public WebElement sendRequestBtn;
 

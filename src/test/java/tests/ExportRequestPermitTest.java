@@ -25,6 +25,8 @@ public class ExportRequestPermitTest extends TestBase {
 	RequestPermitPage requestPermitPage;
 	// String email = "ahmed.ali.hassan.elsetouhy@gmail.com";
 	// String password = "P@55word";
+	String email = "ariel.lubowitz@hotmail.com";
+	String password = "P@55word";
 	String exportPermitType = "تصريح تصدير نفايات";
 	String importPermitType = "تصريح إستيراد نفايات";
 	ExportPermitFormPage expertPermitFormPage;
@@ -57,8 +59,9 @@ public class ExportRequestPermitTest extends TestBase {
 	public void makeLoginFormTest() throws AWTException, IOException {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
-		ExcelReader ER = new ExcelReader();
-		loginPage.loginFun(ER.getExcelData(0, 2)[1][1], ER.getExcelData(0, 2)[2][1]);
+		// ExcelReader ER = new ExcelReader();
+		// loginPage.loginFun(ER.getExcelData(0, 2)[1][1], ER.getExcelData(0, 2)[2][1]);
+		loginPage.loginFun(email, password);
 		loginPage.submitLoginformBtn();
 		Assert.assertTrue(homePage.logoutBtn.isDisplayed());
 		System.out.println(homePage.homePageText.getText());
@@ -124,11 +127,11 @@ public class ExportRequestPermitTest extends TestBase {
 
 	}
 
-	@Test(priority = 10, dependsOnMethods = { "validFillExportPermitForm" })
-	public void makeLogoutTest() throws AWTException {
-		homePage = new HomePage(driver);
-		defaultPage = new DefaultPage(driver);
-		homePage.logoutFun();
-		Assert.assertTrue(defaultPage.loginBtn.isDisplayed());
-	}
+//	@Test(priority = 10, dependsOnMethods = { "validFillExportPermitForm" })
+//	public void makeLogoutTest() throws AWTException {
+//		homePage = new HomePage(driver);
+//		defaultPage = new DefaultPage(driver);
+//		homePage.logoutFun();
+//		Assert.assertTrue(defaultPage.loginBtn.isDisplayed());
+//	}
 }
