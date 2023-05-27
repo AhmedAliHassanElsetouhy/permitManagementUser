@@ -10,15 +10,12 @@ import data.ExcelReader;
 import pages.DefaultPage;
 import pages.HomePage;
 import pages.LoginPage;
-
 public class LoginTest extends TestBase {
-
 	DefaultPage defaultPage;
 	LoginPage loginPage;
 	HomePage homePage;
 	// String email = "ahmed.ali.hassan.elsetouhy@gmail.com";
 	// String password = "P@55word";
-
 	@Test(priority = 1, alwaysRun = true)
 	public void openLoginFormTest() throws IOException {
 		ExcelReader ER = new ExcelReader();
@@ -29,15 +26,13 @@ public class LoginTest extends TestBase {
 		Assert.assertTrue(loginPage.loginFormHeaderMsg.getText().equals("تسجيل الدخول"));
 		Assert.assertTrue(loginPage.forgetPassLink.isDisplayed());
 	}
-
 	@Test(priority = 2, dependsOnMethods = { "openLoginFormTest" })
-	public void emptydataLoginFormTest() {
+	public void emptyDataLoginFormTest() {
 		loginPage = new LoginPage(driver);
 		loginPage.submitLoginformBtn();
 		Assert.assertTrue(loginPage.emailRequiredMsg.getText().equals("البريد الإلكتروني مطلوب"));
 		Assert.assertTrue(loginPage.passwordRequiredMsg.getText().equals("كلمة المرور مطلوبة"));
 	}
-
 	@Test(priority = 3, dependsOnMethods = { "emptydataLoginFormTest" })
 	public void emptyEmailFieldLoginFormTest() throws AWTException, IOException {
 		loginPage = new LoginPage(driver);
@@ -48,7 +43,6 @@ public class LoginTest extends TestBase {
 		// loginPage.refreshPage();
 		loginPage.passwordFieldTxt.clear();
 	}
-
 	@Test(priority = 4, dependsOnMethods = { "emptyEmailFieldLoginFormTest" })
 	public void emptyPasswordFieldLoginFormTest() throws AWTException, IOException {
 		loginPage = new LoginPage(driver);
@@ -59,7 +53,6 @@ public class LoginTest extends TestBase {
 		// loginPage.refreshPage();
 		loginPage.emailFieldTxt.clear();
 	}
-
 	@Test(priority = 5, dependsOnMethods = { "emptyPasswordFieldLoginFormTest" })
 	public void makeLoginFormTest() throws AWTException, IOException {
 		loginPage = new LoginPage(driver);
